@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor PK's Autovía A-7</title>
+	<link rel="shortcut icon" href="https://www.mitma.gob.es/recursos_mfom/favicon.ico"/>
+	<meta name="author" content="Ruben Barrionuevo Jimenez">
+	<meta http-equiv=”Content-Language” content=”es”/>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<style>
+		*{margin: 0;padding: 0;}
+		body{background: #444;}
+		nav{background:#FFDB00;position: fixed;width: 100%;height: 90px;line-height: 90px;vertical-align: middle;}
+		nav img{display: inline-block;height: 80px;float: left;margin-left: 20px;}
+		#base{text-align: center;}
+		#cajetin{display: inline-block;width: 350px;height: 400px;background: white;margin-top: 120px;border-radius: 2.5px 15px 2.5px 15px;border: solid 2px #ffdb00;overflow: hidden;}
+		#cabeza{background: #666;}
+		#cabeza img{width: 80%;padding: 20px 0px 20px 0px;}
+		.form-row{margin-top: 20px;}
+		.form-row .form-control{margin: 0px 20px 0px 10px;transition:.15s;border: 1px solid #FFDB00;}
+		.form-row .form-control:hover{border-color: #FFDB00;box-shadow: 0 1px 1px #FFDB00 inset, 0 0 8px #FFDB00;outline: 0 none;}
+		.form-row .form-control:focus{border-color: #FFDB00;box-shadow: 0 1px 1px #FFDB00 inset, 0 0 8px #FFDB00;outline: 0 none;}
+		.btn-warning{background: #ffdb00;}
+		footer{position: absolute;bottom: 0px;left: 0px;width: 100%;height: 70px;line-height: 70px;vertical-align: middle;background: #ffdb00;color:#444}
+		footer h1{font-family: verdana;font-size: 16px;display: inline-block;margin-left: 10px;}
+
+	</style>
+</head>
+<body>
+
+<nav>
+	<img src="https://www.mitma.gob.es/sites/mfom/themes/mfom/img/MTMAU.svg"/>
+</nav>
+
+<div id="base">
+	<div id="cajetin">
+		<form>
+			<div id="cabeza"><img src="https://serveo.com/themes/custom/serveo/images/Serveo_logo_blanco_RGB.svg"/></div>
+  			<div class="form-row col-11">
+  				<label for="exampleInputEmail1">PK Antiguo (241+000) hasta (303+000)</label>
+     			 <input type="text"   onclick="this.select()" id="antiguo" class="form-control" placeholder="Ejemplo: 255+000">
+				  <div class="form-row col-11"><button type="button" class="btn btn-warning antiguo">Calcular PK Nuevo</button></div>
+     		</div>
+     		<div class="form-row col-11">
+				 <label for="exampleInputEmail1">PK Nuevo (922+000) hasta (984+000)</label>
+     			 <input type="text" id="nuevo" onclick="this.select()" class="form-control" placeholder="Ejemplo: 970+000">
+     		</div>
+     		<div class="form-row col-11"><button type="button" class="btn btn-warning nuevo">Calcular PK Antiguo</button></div>
+		</form>
+		&nbsp;
+	</div>
+</div>
+
+<footer>
+	<h1>Rubén Barrionuevo Jiménez (Sector MA-2), para Serveo</h1>
+</footer>
+
+<script>
+$(document).ready(function(){
+
+
+$("#antiguo").keyup(function(event) {
+            if (event.keyCode === 13) {
+                $(".antiguo").click();
+            }
+        });
+
+$("#nuevo").keyup(function(event) {
+            if (event.keyCode === 13) {
+                $(".nuevo").click();
+            }
+        });
+
+
+$(".antiguo").click(function(){
+
+var antiguo = $("#antiguo").val();
+
+
+
+	if (antiguo.indexOf('+') > -1){
+		
+
+ 		const a = antiguo.split("+");
+		var pka = parseFloat(a[0]);
+		var ha = parseFloat(a[1]);
+
+		if(Number.isNaN(pka) || Number.isNaN(ha)){
+			alert("No has introducido un valor correcto, Ejemplo: 255+000");
+		}
+		else{
+		var pka = pka+(743-((pka-241))*2);
+
+		
+		var min = 1;
+		var max = 999;
+		var ha = (min+max)-ha;
+		if (ha == 1000){
+			var ha = 0;
+		}
+		if (ha != 0){
+			var pka = pka-1;
+		}
+		$('#nuevo').val(pka+"+"+ha);
+		}
+		
+
+
+	} else{
+
+
+	
+		var pka = parseFloat(antiguo);
+
+		var ha = 0;
+		if(Number.isNaN(pka)){
+			alert("No has introducido un valor correcto, Ejemplo: 255+000");
+		}
+		var pka = pka+(743-((pka-241))*2);
+
+		
+		var min = 1;
+		var max = 999;
+		var ha = (min+max)-ha;
+		if (ha == 1000){
+			var ha = 0;
+		}
+		if (ha != 0){
+			var pka = pka-1;
+		}
+		$('#nuevo').val(pka+"+"+ha);
+}
+});
+
+$(".nuevo").click(function(){
+var nuevo = $("#nuevo").val(); 
+	if (nuevo.indexOf('+') > -1){
+		const n = nuevo.split("+");
+		var pkn = parseFloat(n[0]);
+		var hn = parseFloat(n[1]);
+
+		if(Number.isNaN(pkn) || Number.isNaN(hn)){
+			alert("No has introducido un valor correcto, Ejemplo: 255+000");
+		}
+		else{
+		var pkn = pkn+(743-(pkn-241)*2);
+		var min = 1;
+		var max = 999;
+		var hn = (min+max)-hn;
+		if (hn == 1000){
+			var hn = 0;
+		}
+		if (hn != 0){
+			var pkn = pkn-1;
+		}
+		$('#antiguo').val(pkn+"+"+hn);	
+		}
+	} else{
+
+
+	        var pkn = parseFloat(nuevo);
+
+		if(Number.isNaN(pkn)){
+			alert("No has introducido un valor correcto, Ejemplo: 255+000");
+		}
+		else{
+
+				var hn = 0;
+		var pkn = pkn+(743-(pkn-241)*2);
+		var min = 1;
+		var max = 999;
+		var hn = (min+max)-hn;
+		if (hn == 1000){
+			var hn = 0;
+		}
+		if (hn != 0){
+			var pkn = pkn-1;
+		}
+		$('#antiguo').val(pkn+"+"+hn);	
+	}
+
+
+
+}
+});
+
+});
+</script>
+</body>
+</html>
