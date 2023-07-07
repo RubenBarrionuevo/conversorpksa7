@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Conversor PK's Autovía A-7</title>
 	<link rel="shortcut icon" href="https://www.mitma.gob.es/recursos_mfom/favicon.ico"/>
 	<meta name="author" content="Ruben Barrionuevo Jimenez">
 	<meta http-equiv=”Content-Language” content=”es”/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -13,7 +14,7 @@
 
 	<style>
 		*{margin: 0;padding: 0;}
-		body{background: #444;}
+		body{background: #444;background-image:url(https://i.imgur.com/oppE7mR.jpg);background-position:top center;}
 		nav{background:#FFDB00;position: fixed;width: 100%;height: 90px;line-height: 90px;vertical-align: middle;}
 		nav img{display: inline-block;height: 80px;float: left;margin-left: 20px;}
 		#base{text-align: center;}
@@ -25,9 +26,11 @@
 		.form-row .form-control:hover{border-color: #FFDB00;box-shadow: 0 1px 1px #FFDB00 inset, 0 0 8px #FFDB00;outline: 0 none;}
 		.form-row .form-control:focus{border-color: #FFDB00;box-shadow: 0 1px 1px #FFDB00 inset, 0 0 8px #FFDB00;outline: 0 none;}
 		.btn-warning{background: #ffdb00;}
-		footer{position: absolute;bottom: 0px;left: 0px;width: 100%;height: 70px;line-height: 70px;vertical-align: middle;background: #ffdb00;color:#444}
+		footer{position: fixed;bottom: 0px;left: 0px;width: 100%;height: 70px;line-height: 70px;vertical-align: middle;background: #ffdb00;color:#444}
 		footer h1{font-family: verdana;font-size: 16px;display: inline-block;margin-left: 10px;}
-
+		@media screen and (max-width:600px){
+			#cajetin{min-width: 200px;max-width:350px;height: 600px;}
+		}
 	</style>
 </head>
 <body>
