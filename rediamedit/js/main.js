@@ -456,7 +456,7 @@ $(function () {
         zoomControl: false,
         attributionControl: false,
         doubleClickZoom: false,
-        zoomSnap: 0.2 //1 por niveles, 0 desactivado
+        zoomSnap: 0 //0.2 //1 por niveles, 0 desactivado
     };
     var mapA;
     var mapB;
