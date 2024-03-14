@@ -453,10 +453,10 @@ $(function () {
     //---------------------------------------------------------------------
     var mapOptions = {
         inertia: true,
-        zoomControl: false,
+        zoomControl: true,
         attributionControl: false,
         doubleClickZoom: false,
-        zoomSnap: 1 //0.2 //1 por niveles, 0 desactivado
+        zoomSnap: 0.2 //1 por niveles, 0 desactivado
     };
     var mapA;
     var mapB;
