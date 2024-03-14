@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html id="html" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title data-bind="text: shareText">Comparador de cartografía</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+        <!--
+        <link rel="canonical" href="http://www.example.com/" >
+        -->
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <!-- Tell the mobile browser to disable unwanted scaling of the page and set it to its actual size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=no" />
+
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/normalize.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/main.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/font-awesome.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/leaflet.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/L.Control.MapCenterCoord.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/easy-button.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/toastr.min.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/jssocials.css">
+        <link rel="stylesheet" href="https://portalrediam.cica.es/comparaWMS/css/jssocials-theme-flat.css">
+    </head>
+    <body id="global-wrapper" class="">
+
+    <!-- Matomo Image Tracker-->
+        <img referrerpolicy="no-referrer-when-downgrade" src="http://portalrediam.cica.es/matomo/matomo.php?idsite=10&amp;rec=1" style="position: absolute; border:0" alt="" />
+        <!-- End Matomo -->
+        <!-- End Matomo -->
+        <div id="no-js-error">¡Esta aplicación no puede funcionar sin javascript!</div>
+        <div data-bind="ifnot: finishedLoading">
+            <div id="loading-message" data-bind="css: {visible: fatalError}">
+                <h1><i class="fa fa-cog fa-spin fa-fw"></i> Cargando...</h1>
+                <p>Espere, por favor...</p>
+                <p><i class="fa fa-question-circle" aria-hidden="true"></i> <small>¿Problemas para visualizar la página?<br>Pruebe a <a href="javascript:window.open(window.location.href, '_blank');">abrirla en una nueva ventana <i class="fa fa-external-link" aria-hidden="true"></i></a></small><p>
+            </div>
+        </div>
+        <div data-bind="if: fatalError">
+            <div id="fatal-error-message" data-bind="css: {visible: fatalError}">
+                <h1>Se ha producido un error</h1>
+                <!-- fa-ambulance   fa-frown-o   fa-exclamation-triangle   fa-exclamation-circle   fa-thumbs-o-down   fa-fire-extinguisher+fa-fire -->
+                <div><i class="fatal-error-icon fa fa-ambulance"></i></div>
+                <p>La aplicación no se ha podido iniciar.</p>
+                <p data-bind="text: fatalError"></p>
+            </div>
+        </div>
+        <aside><img class="rediam-logo" src="https://portalrediam.cica.es/comparaWMS/img/Rediam_logo.png" alt="Rediam. Red de información ambiental de Andalucía"></aside>
+        <!-- Application content -->
+        <nav id="left-layer-list" class="popup-container" data-bind="css: {visible: isVisibleLayer1Selector}">
+            <div class="scroller">
+                <form  class="selectable-list" data-bind="foreach: layers1()">
+                    <label class="listitem" data-bind="css: {checked: $root.layer1Index() === index}">
+                        <input type="radio" name="layer1" data-bind="checkedValue: index, checked: $root.layer1Index">
+                        <span class="icon fa fa-map"></span>
+                        <span class="title" data-bind="text: title"></span>
+                        <span class="description" data-bind="text: descr"></span>
+                        <span class="url"><a target="_blank" data-bind="text: URL, attr: {href: URL + '&service=wms&request=getcapabilities'}"></a></span>
+                    </label>
+                </form>
+            </div>
+        </nav>
+        <nav id="right-layer-list" class="popup-container" data-bind="css: {visible: isVisibleLayer2Selector}">
+            <div class="scroller">
+                <form  class="selectable-list" data-bind="foreach: layers2()">
+                    <label class="listitem" data-bind="css: {checked: $root.layer2Index() === index}">
+                        <input type="radio" name="layer2" data-bind="checkedValue: index, checked: $root.layer2Index">
+                        <span class="icon fa fa-map"></span>
+                        <span class="title" data-bind="text: title"></span>
+                        <span class="ghost description" data-bind="text: descr"></span>
+                        <span class="ghost url"><a target="_blank" data-bind="text: URL, attr: {href: URL + '&service=wms&request=getcapabilities'}"></a></span>
+                    </label>
+                </form>
+            </div>
+        </nav>
+        <nav id="aoi-list" class="popup-container" data-bind="css: {visible: isVisibleAoiSelector}">
+            <div class="search-wrapper">
+                <i class="fa fa-search"></i><input id="aois-filter" type="search" data-bind="textInput: filterTextAOIs">
+            </div>
+            <div class="scroller">
+                <form  class="selectable-list">
+                    <!-- ko foreach: AOIs() -->
+                    <label class="listitem aoi-listitem" data-bind="css: {checked: $root.selectedAOI() === index, 'filtered-out': !$root.matchAOIFilter($data)}">
+                        <input type="radio" name="aoi" data-bind="checkedValue: index, checked: $root.selectedAOI">
+                        <span class="icon fa fa-map-pin"></span>
+                        <span class="title" data-bind="text: title"></span>
+                        <span class="ghost description" data-bind="text: descr"></span>
+                        <span class="ghost extent"><span class="fa fa-arrows"></span> <span data-bind="text: extent"></span></span>
+                    </label>
+                    <!-- /ko -->
+                    <label class="listitem no-results warn">
+                        <span class="icon fa fa-exclamation-triangle"></span>
+                        <span class="title">No se encontró nada</span>
+                        <span class="ghost description">Pruebe con otra búsqueda</span>
+                    </label>
+                </form> 
+            </div>
+        </nav>
+        <nav id="bookmarks-list" class="popup-container" data-bind="css: {visible: isVisibleBookmarkSelector}">
+            <div class="search-wrapper">
+                <i class="fa fa-search"></i><input id="bookmarks-filter" type="search" placeholder="Nombre del marcador" data-bind="textInput: filterTextBookmarks">
+            </div>
+            <button class="add-bookmark" data-bind="click: addBookmark"><i class="fa fa-plus-circle"></i> Añadir marcador</button>
+            <div class="scroller">
+                <form  class="selectable-list">
+                    <!-- ko foreach: bookmarks() -->
+                    <label class="listitem bookmark-listitem" data-bind="css: {checked: $root.selectedBookmark() === $index(), 'filtered-out': !$root.matchBookmarkFilter($data)}">
+                        <input type="radio" name="bookmark" data-bind="checkedValue: $index(), checked: $root.selectedBookmark">
+                        <span class="icon fa fa-bookmark"></span>
+                        <span class="title" data-bind="text: title"></span>
+                        <span class="ghost extent"><span class="fa fa-arrows"></span> <span data-bind="text: extent"></span></span>
+                        <span class="deleteitem fa fa-trash" data-bind="click: $root.deleteBookmark"></span>
+                    </label>
+                    <!-- /ko -->
+                    <label class="listitem no-results info">
+                        <span class="icon fa fa-info-circle"></span>
+                        <span class="title" data-bind="ifnot: bookmarks().length">No hay marcadores</span>
+                        <span class="title" data-bind="if: bookmarks().length">No hay ningún marcador con ese texto</span>
+                        <span class="ghost description" data-bind="ifnot: bookmarks().length">Escriba un nombre y pulse el botón 'Añadir' para crear uno</span>
+                        <span class="ghost description" data-bind="if: bookmarks().length">Pulse el botón 'Añadir' para crearlo</span>
+                    </label>
+                </form> 
+            </div>
+        </nav>
+        <section id="share-popup" class="popup-container" data-bind="css: {visible: isVisibleSharePopup}">
+            <div class="scroller">
+                <div id="share-popup-content">
+                    <p>Compartir <b data-bind="text: shareText"></b></p>
+                    <div id="share-buttons"></div>
+                    <p>Éste es el enlace que se compartirá:</p>
+                    <input id="shared-link" type="text" readonly="" data-bind="value: url">
+                    <p class="ghost">Haga click <a target="_blank" data-bind="attr: {href: url}">aquí</a> para probar el enlace.</p>
+                </div>
+            </div>
+        </section>
+        <section id="layer1-info" class="popup-container" data-bind="css: {visible: isVisibleLayer1Info}, with: layer1">
+            <div class="scroller">
+                <div class="info-popup-content">
+                    <h1 data-bind="text: title"></h1>
+                    <p data-bind="text: descr"></p>
+                    <p data-bind="text: URL"></p>
+                    <p><a target="_blank" data-bind="attr: {href: $root.getCapabilitiesFromWmsUrl(URL)}">Más información</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section id="layer1-info" class="popup-container" data-bind="css: {visible: isVisibleLayer2Info}, with: layer2">
+            <div class="scroller">
+                <div class="info-popup-content">
+                    <h1 data-bind="text: title"></h1>
+                    <p data-bind="text: descr"></p>
+                    <p data-bind="text: URL"></p>
+                    <p><a target="_blank" data-bind="attr: {href: $root.getCapabilitiesFromWmsUrl(URL)}">Más información</a>.</p>
+                </div>
+            </div>
+        </section>
+        <main id="map-wrapper" data-bind="css: mode">
+            <div class="info-text-left" data-bind="click: isVisibleLayer1Info, attr: {title: title1}"><i class="fa fa-info"></i><div class="info-title" data-bind="text: title1"></div></div>
+            <div class="info-text-right" data-bind="click: isVisibleLayer2Info, attr: {title: title2}"><i class="fa fa-info"></i><div class="info-title" data-bind="text: title2"></div></div>
+            <div id="map-b-wrapper" data-bind="attr: {title: title2}">
+                <div id="map-b">
+                    <img class="map-center-crosshair" src="https://portalrediam.cica.es/comparaWMS/img/center.png">
+                </div>
+            </div>
+            <div id="map-a-wrapper" data-bind="attr: {title: title1}">
+                <div id="map-a">
+                    <img class="map-center-crosshair" src="https://portalrediam.cica.es/comparaWMS/img/center.png">
+                </div>
+            </div>
+        </main>
+        <div id="overlay"></div>
+        <div id="embedded-overlay">
+            <!-- fa-play-circle-o fa-unlock-alt -->
+            <i class="fa fa-play-circle-o"></i>
+        </div>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/jquery-2.1.0.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/knockout-3.4.2.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/leaflet.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/L.Map.Sync.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/leaflet-providers.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/L.Control.MapCenterCoord.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/leaflet-tilelayer-wmts-src.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/interact.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/hammer.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/jquery.hammer.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/easy-button.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/toastr.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/jssocials.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/vendor/jquery.mark.min.js"></script>
+        <script src="https://portalrediam.cica.es/comparaWMS/js/helper.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

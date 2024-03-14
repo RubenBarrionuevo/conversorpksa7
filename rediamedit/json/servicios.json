@@ -1,0 +1,372 @@
+{
+    "layers": [{
+            "group": "B",
+            "title": "1956-57 - Ortofotografía BN. 1 m", 
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_1956",
+            "layers": "ortofoto_1956,distribucion_hojas_10000",
+            "Descr": "Ortofotografía digital pancromática de Andalucía a partir de Vuelo Fotogramétrico nacional BN a escala 1:33.000 de 1956-57, realizado mediante colaboración del Ejército del Aire de España y la Fuerza Aérea de EEUU, conocido coloquialmente como vuelo americano del 56"
+        }, {
+            "group": "B",
+            "title": "1977-83 - Ortofotografía BN. 0,5 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_BN_1977_83",
+            "layers": "orto_BN_77_83,dist_10000",
+            "Descr": "Ortofotografía Digital Histórica de Andalucía (Pancromática) a partir de Vuelo Fotogramétrico nacional Interministerial BN a escala 1:18.000 realizado entre 1977-83 sobre todo el territorio nacional (y concretamente en Andalucía entre 1977-78), mediante colaboración de diferentes Ministerios, conocido coloquialmente como vuelo del IRYDA"
+        }, {
+            "group": "B",
+            "title": "1984-85 - Ortofotografía BN. 1 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_PAN_Andalucia_84_85",
+            "layers": "orto_1984_85,dist_10000",
+            "Descr": "Ortofotografía Digital Histórica de Andalucía"			
+        }, {
+            "group": "B",
+            "title": "1997-98 - Ortofotografía BN. SIG Oleícola. 1 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_PAN_Sig_Oleicola_1997_98",
+            "layers": "orto_sig_oleicola_97_98,del_sig_oleicola_97_98",
+            "Descr": "Ortofotografía digital a partir de vuelo fotogramétrico nacional (Olystat) de 1997-98. Esta Ortofoto se ha utilizado como base de referencia territorial del SIG Oleícola"
+        }, {
+            "group": "B",
+            "title": "1998 - Ortofotografía Color. 1 m",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto1998",
+            "layers": "hoja_oca10_1998,oca10_1998",
+            "Descr": "Ortofotografía Digital en Color de Andalucía Año 1998"
+        }, {
+            "group": "B",
+            "title": "2001 - Ortofotografía BN. 0,5 m",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto2001",
+            "layers": "hoja_opa05_2001,opa05_2001",
+            "Descr": "Ortofotografía Digital Pancromática de Andalucía Año 2001 generada a partir del vuelo fotogramétrico Blanco y Negro a escala aproximada 1:20000 entre los años 2001 y 2002"
+        }, {
+            "group": "B",
+            "title": "2001-02 - Ortofotografía Coloreada. 0,5 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_coloreada_Andalucia_2001",
+            "layers": "ortofoto_2001_02_COLOR_CMA,distribucion_hojas_10000",
+            "Descr": "Ortofotografía digital a color del territorio andaluz, 2001-2002. Obtenida a partir de la ortofotografía color de 1998-1999 y la pancromática de 2001-2002 por fusión de las dos imágenes"
+        }, {
+            "group": "B",
+            "title": "2004 - Ortofotografía Color. 1 m",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto2004? ",
+            "layers": "hoja_oca10_2004,oca10_2004",
+            "Descr": "Ortofotografía Digital en Color de Andalucía Año 2004. Generada a partir del vuelo fotogramétrico color a escala 1:60000 en las fechas de junio-octubre de 2004"
+        }, {
+            "group": "B",
+            "title": "2004-05 - Ortofotografía . Color. 0,5 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_2004_2005",
+            "layers": "orto_rgb_2004_2005,hojas_10000",
+            "Descr": "Ortofoto 2004-2005 composición por cuadrantes de Ortofotografía a 0.5m de resolución: Cuadrante Sureste (SE) en Color Infrarrojo y Cuadrante Suroeste (SW) en Color, generadas a partir de vuelos de 2004 y Cuadrante Noreste (NE) Color Infrarrojo y Cuadrante Noroeste (NW) Color, generadas a partir de vuelos de 2005"
+        }, {
+            "group": "B",
+            "title": "2006-07 - Ortofotografía Color. 0,5 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_RGB_2006_2007",
+            "layers": "orto_rgb_2006_2007,hojas_10000",
+            "Descr": "Ortofoto Color del Cuadrante Sureste (SE) de Andalucía de 0.5m de resolución , Ortofoto Color del Cuadrante Suroeste (SW) de Andalucía de 0.5m de resolución, ambas generadas a partir de dos vuelos según cuadrante del periodo 2006, la Ortofoto Color del Cuadrante Noreste (NE) de Andalucía de 0.5m de resolución y la Ortofoto Color del Cuadrante Noroeste (NW) de Andalucía de 0.5m de resolución, ambas generadas a partir de dos vuelos según cuadrante del periodo 2007"
+        }, {
+            "group": "B",
+            "title": "2008-09 - Ortofotografía Color. 0,5 m",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Ortofoto_Andalucia_RGB_2008_2009",
+            "layers": "orto_rgb_2008_2009,hojas_10000",
+            "Descr": "Ortofoto Color e Infrarrojo del Cuadrante Sureste (SE) de Andalucía de 0.5m de resolución, Ortofoto Color e Infrarrojo del Cuadrante Suroeste (SW) de Andalucía de 0.5m de resolución, ambas generadas a partir de dos vuelos según cuadrante del periodo 2008, la Ortofoto Color e Infrarrojo del Cuadrante Noreste (NE) de Andalucía de 0.5m de resolución y la Ortofoto Color e Infrarrojo del Cuadrante Noroeste (NW) de Andalucía de 0.5m de resolución, ambas generadas a partir de dos vuelos según cuadrante del periodo 2009"
+        }, {
+            "group": "B",
+            "title": "2010-11 - Ortofotografía Color. 0,5 m",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto2010",
+            "layers": "orto_2010-11,hoja_oca10_2010-11",
+            "Descr": "Ortofotografía Basica en Color de Andalucía de 2010 y 2011. Agrupa los dos vuelos fotogramétrico realizados dentro del proyecto PNOA Básico 10-11, correspondientes a la mitad Sur de Andalucía y realizados en el año 2010 y los dos vuelos fotogramétricos realizados dentro del proyecto PNOA Básico 10-11, correspondientes a la mitad norte de Andalucía y realizados en el año 2011"
+        }, {
+            "group": "B",
+            "title": "2013 - Ortofotografía color, 0.5m",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto2013",
+            "layers": "OCA10_2013",
+            "Descr": "Ortofotografía Basica en Color de Andalucía de 2013. Ortofotografía del Plan Nacional de Ortofotografía Aérea (PNOA) generado a partir de umn vuelo de una escala aproximada 1:70 000"
+        }, {
+            "group": "B",
+            "title": "2016 - Ortofotografía PNOA Color Natual",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto2016",
+            "layers": "ortofotografia_2016_rgb",
+            "Descr": "Ortofotografía de Andalucía (2016) a color RGB con resolución de 0.5 metros pixel zona Norte y 0.25 metros pixel zona Sur"
+        }, {
+            "group": "B",
+            "title": "2016 - Ortofotografía PNOA Falso Color Infrarrojo",
+            "URL": "https://www.ideandalucia.es/wms/ortofoto2016",
+            "layers": "Ortofotografia_Andalucia_2016",
+            "Descr": "Ortofotografía de Andalucía (2016) a color Infrarrojo con resolución de 0.5 metros pixel zona Norte y 0.25 metros pixel zona Sur"
+        }, {
+            "group": "B",
+            "title": "Ortofotografia de Máxima Actualidad Color",
+            "tiled": true,
+            "URL": "https://www.ign.es/wmts/pnoa-ma",
+            "layer": "OI.OrthoimageCoverage",
+            "Descr": "Ortofotos de máxima actualidad del proyecto PNOA (Plan Nacional de Ortofotografía Aérea) visibles a partir de la escala 1:70 000 aproximadamente. Para escalas menores (menos detalladas) se publican las imágenes de satélite Spot5 de 10 metros de resolución"
+        }, {
+            "group": "B",
+            "title": "1975 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1975_654",
+            "layers": "landsat_1975_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1975, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1976 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1976_654",
+            "layers": "landsat_1976_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1976, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1977 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1977_654",
+            "layers": "landsat_1977_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1977, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1978 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1978_654",
+            "layers": "landsat_1978_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1978, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1979 - Ortoimagen Landsat MSS, Falso color,654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1979_654",
+            "layers": "landsat_1979_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1979, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1980 - Ortoimagen Landsat MSS. Falso color,654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1980_654",
+            "layers": "landsat_1980_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1980, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1981 - Ortoimagen Landsat MSS, Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1981_654",
+            "layers": "landsat_1981_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1981, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1982 - Ortoimagen Landsat MSS, Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1982_654",
+            "layers": "landsat_1982_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1982, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1983 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1983_654",
+            "layers": "landsat_1983_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1983, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1984 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1984_654",
+            "layers": "landsat_1984_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1984, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1985 - Ortoimagen Landsat MSS. Falso color",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1985_654",
+            "layers": "landsat_1985_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1985, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1986 - Ortoimagen Landsat MSS. Falso color, 654",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_1986_654",
+            "layers": "landsat_1986_654",
+            "Descr": "Mosaico de ortoimágenes Landsat MSS (Multi Spectral Scanner) de Andalucía, año 1986, de 80 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 6, 5 y 4 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "1991 - Ortoimagen Landsat TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_Andalucia_1991",
+            "layers": "mosaico_landsat_1991",
+            "Descr": "Mosaico de ortoimágenes Landsat TM de 1991. Para dicho mosaico se utilizaron las escenas filtradas y corregidas por interpolación cúbica"
+        }, {
+            "group": "B",
+            "title": "1995 - Ortoimagen Landsat TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_Andalucia_1995",
+            "layers": "mosaico_landsat_1995",
+            "Descr": "Mosaico de ortoimágenes Landsat TM de 1995. Para dicho mosaico se utilizaron las escenas filtradas y corregidas por interpolación cúbica"
+        }, {
+            "group": "B",
+            "title": "1995 - Ortoimagen SPOT HRV PAN",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_SPOT_Andalucia_1995",
+            "layers": "mosaico_SPOT_bn_1995",
+            "Descr": "Mosaico de ortoimágenes blanco y negro del territorio andaluz de 1995. Obtenido a partir del sensor HRV del satélite SPOT, de 10 m. de resolución espacial"
+        }, {
+            "group": "B",
+            "title": "1998-99 - Ortoimagen Landsat 5TM-IRS PAN. Falso color",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_IRS_Andalucia_1998",
+            "layers": "REDIAM",
+            "Descr": "Mosaico de ortoimágenes Landsat 5TM-IRS PAN de 1998-1999, formado por hojas 1:50.000 en varios formatos. Realizado mediante la fusión de imágenes Landsat 5TM del año 1999 con imágenes IRS PAN del año 1998"
+        }, {
+            "group": "B",
+            "title": "1998 - Ortoimagen IRS PAN. Falso color",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_IRS_Andalucia_1998",
+            "layers": "mosaico_irs_bn_1998",
+            "Descr": "Mosaico de ortoimágenes blanco y negro del territorio andaluz de 1998. Las ortoimágenes fueron captadas por el sensor pancromático (PAN) del satélite IRS (Indian Remote Sensing), de una resolución espacial de 5 m y un ancho de escena de 70 km"
+        }, {
+            "group": "B",
+            "title": "1999 - Ortoimagen Landsat TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_Andalucia_1999",
+            "layers": "mosaico_landsat_1999",
+            "Descr": "Mosaico de ortoimágenes Landsat TM de 1999. Para dicho mosaico se utilizaron las escenas filtradas y corregidas por interpolación cúbica"
+        }, {
+            "group": "B",
+            "title": "2000 - Ortoimágenes Landsat ETM+, Fusión XS y PAN, color natural",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_2000_742",
+            "layers": "landsat_2000_742",
+            "Descr": "Mosaico de ortoimágenes Landsat ETM+ (Enhanced Thematic Mapper Plus Multi+Pan) de Andalucía, año 2000, de 12,5 m de resolución espacial. Para la generación de dicho mosaico en pseudocolor natural se utilizaron las bandas 7,4 y 2 del conjunto de escenas Landsat corregidas geométricamente por interpolación bicúbica, a las que se les aplicó una fusión por Pan Sharpening con la banda pancromática, y una posterior expansión lineal del contraste"
+        }, {
+            "group": "B",
+            "title": "2003 - Ortoimagen Landsat 5TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_Andalucia_2003",
+            "layers": "mosaico_landsat_2003",
+            "Descr": "Mosaico de ortoimágenes Landsat 5TM de 2003. Para dicho mosaico se utilizaron las escenas filtradas y corregidas por interpolación cúbica"
+        }, {
+            "group": "B",
+            "title": "2004 - Ortoimagen Landsat 5TM, Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_Andalucia_2004",
+            "layers": "mosaico_landsat_2004",
+            "Descr": "Mosaico de ortoimágenes Landsat 5TM de 2004. Para dicho mosaico se utilizaron las escenas filtradas y corregidas por interpolación cúbica"
+        }, {
+            "group": "B",
+            "title": "2005 - Ortoimagen SPOT 5 HRG XS. Color natural",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_spot_2005_nat",
+            "layers": "spot_2005_nat",
+            "Descr": "Mosaico de ortoimágenes SPOT 5 HRG XS (High Resolution Geometrical Panchromatic and Multispectral) de Andalucía, año 2005, a 2,5m de resolución espacial. Para la generación del mosaico previamente se han fusionado las bandas multiespectrales con las pancromáticas, y se ha generado una banda de azul sintético por combinación lineal de las otras. Por último, se han combinado las bandas 2, 1 y azul sintético en sus canales correspondientes (rojo, verde y azul), resultando el color natural"
+        }, {
+            "group": "B",
+            "title": "2005 - Ortoimagen Landsat 5TM. Color natural, 321",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_2005_nat",
+            "layers": "landsat_2005_nat",
+            "Descr": "Mosaico de ortoimágenes Landsat TM (Thematic Mapper Data) de Andalucía, año 2005, de 30 metros de resolución espacial. Para la generación del mosaico previamente se han fusionado las bandas 3, 2, 1 asociando estas bandas a su cañón respectivo RGB generando una representación similar a lo que ve el ojo humano, donde el suelo desnudo aparece en tonos marrones, la vegetación en tonalidades verdes,.."
+        }, {
+            "group": "B",
+            "title": "2005 - Ortoimagen Landsat 5TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_2005_345",
+            "layers": "landsat_2005_345",
+            "Descr": "Mosaico de ortoimágenes Landsat TM (Thematic Mapper Data) de Andalucía, año 2005, de 30 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 3, 4 y 5 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "2005 - Ortoimagen SPOT HRVIR-XS. Color natural",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_SPOT_Andalucia_2005",
+            "layers": "mosaico_spot_2005",
+            "Descr": "Mosaico de ortoimágenes a color del territorio andaluz de 2005. Obtenido a partir del sensor multiespectral HRVIR del satélite SPOT 5, compuesto por bandas en el visible e infrarrojo, con una resolución espacial de 20 m"
+        }, {
+            "group": "B",
+            "title": "2007 - Ortoimagen Landsat 5TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_Landsat_Andalucia_2007",
+            "layers": "mosaico_landsat_2007",
+            "Descr": "Mosaico de ortoimágenes Landsat 5TM de 2007. Para dicho mosaico se utilizaron las escenas filtradas y corregidas por interpolación cúbica"
+        }, {
+            "group": "B",
+            "title": "2007 - Ortoimagen IRSS AWFS, Falso color",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_irs_awifs_2007_432",
+            "layers": "irs_awifs_2007_432",
+            "Descr": "Mosaico de ortoimágenes Landsat TM (Thematic Mapper Data) de Andalucía, año 2008, de 25 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 3, 4 y 5 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "2008 - Ortoimagen Landsat 5TM. Falso color, 345",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_2008_345",
+            "layers": "landsat_2008_345",
+            "Descr": "Mosaico de ortoimágenes Landsat TM (Thematic Mapper Data) de Andalucía, año 2008, de 25 metros de resolución espacial. Para la generación de dicho mosaico en falso color se utilizaron las bandas 3, 4 y 5 del conjunto de escenas Landsat"
+        }, {
+            "group": "B",
+            "title": "2008 - Ortoimagen Spot5 HRG. Color natural",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_spot_2008_nat",
+            "layers": "spot_2008_nat",
+            "Descr": "Mosaico de ortoimágenes SPOT 5 HRG XS (High Resolution Geometrical Panchromatic and Multispectral) de Andalucía, año 2008, a 2,5m de resolución espacial. Para la generación del mosaico previamente se han fusionado las bandas multiespectrales con las pancromáticas, y se ha generado una banda de azul sintético por combinación lineal de las otras. Por último, se han combinado las bandas 2, 1 y azul sintético en sus canales correspondientes (rojo, verde y azul), resultando el color natural"
+        }, {
+            "group": "B",
+            "title": "2009 - Ortoimagen Landsat 5TM. Color natural, 742",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_landsat_2009_nat",
+            "layers": "landsat_2009_nat",
+            "Descr": "Mosaico de ortoimágenes Landsat TM (Thematic Mapper Data) de Andalucía, año 2009, de 30 metros de resolución espacial. Para la generación del mosaico previamente se han fusionado las bandas 3, 2, 1 asociando estas bandas a su cañón respectivo RGB generando una representación similar a lo que ve el ojo humano, donde el suelo desnudo aparece en tonos marrones, la vegetación en tonalidades verdes,.."
+        }, {
+            "group": "B",
+            "title": "2009 - Ortoimagen Spot5 HRG. Color natural",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_spot_2009_nat",
+            "layers": "spot_2009_nat",
+            "Descr": "Mosaico de ortoimágenes SPOT 5 HRG XS (High Resolution Geometrical Panchromatic and Multispectral) de Andalucía, año 2009, a 2,5m de resolución espacial. Para la generación del mosaico previamente se han fusionado las bandas multiespectrales con las pancromáticas, y se ha generado una banda de azul sintético por combinación lineal de las otras. Por último, se han combinado las bandas 2, 1 y azul sintético en sus canales correspondientes (rojo, verde y azul), resultando el color natural"
+        }, {
+            "group": "B",
+            "title": "2010 - Ortoimagen Spot5 HRG. Color natural",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_spot_2010_nat",
+            "layers": "spot_2010_nat",
+            "Descr": "Mosaico de ortoimágenes SPOT 5 HRG XS (High Resolution Geometrical Panchromatic and Multispectral) de Andalucía, año 2010, a 2,5m de resolución espacial. Para la generación del mosaico previamente se han fusionado las bandas multiespectrales con las pancromáticas, y se ha generado una banda de azul sintético por combinación lineal de las otras. Por último, se han combinado las bandas 2, 1 y azul sintético en sus canales correspondientes (rojo, verde y azul), resultando el color natural"
+        }, {
+            "group": "B",
+            "title": "2010 - Ortoimagen Spot5 HRG. Falso color 321",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_spot_2010_321",
+            "layers": "spot_2010_321",
+            "Descr": "Mosaico de ortoimágenes SPOT 5 HRG XS (High Resolution Geometrical Panchromatic and Multispectral) de Andalucía, año 2010, a 2,5m de resolución espacial. Para la generación del mosaico se han combinado las bandas 3, 2 y 1 de las imágenes SPOT fusionadas (XS+PAN), asignanándoles los canales de rojo, verde y azul respectivamente"
+        }, {
+            "group": "B",
+            "title": "2010 - Ortoimagen Spot5 HRG. Falso color 342",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_spot_2010_342",
+            "layers": "spot_2010_342",
+            "Descr": "Mosaico de ortoimágenes SPOT 5 HRG XS (High Resolution Geometrical Panchromatic and Multispectral) de Andalucía, año 2010, a 2,5m de resolución espacial. Para la generación del mosaico se han combinado las bandas 3, 4 y 2 de las imágenes SPOT fusionadas (XS+PAN), asignanándoles los canales de rojo, verde y azul respectivamente"
+        }, {
+            "group": "B",
+            "title": "2016 - Sentinel-2 (libre de nubes) 10m. Color Natural (432). EOX",
+            "URL": "https://b.s2maps-tiles.eu/wmts",
+            "tiled": true,
+            "layer": "s2cloudless_3857",
+            "tilematrixSet": "GoogleMapsCompatible",
+            "Descr": "Sentinel-2 cloudless layer for 2016 by EOX - 4326. Sentinel-2 cloudless – http://s2maps.eu by EOX IT Seevices GmbH (Contains modified Copernicus Sentinel Data 2016 & 2017) released under Creative Commons Arribution-Non Commercial-ShareALike 4.0 International License. For commercial usage please see https://cloudless.eox.at"
+        }, {
+            "group": "B",
+            "title": "2017 - Sentinel-2 (libre de nubes) 10m. Color Natural (432). EOX",
+            "tiled": true,
+            "tilematrixSet": "GoogleMapsCompatible",
+            "URL": "https://b.s2maps-tiles.eu/wmts",
+            "layer": "s2cloudless-2017_3857",
+            "Descr": "Sentinel-2 cloudless layer for 2017 by EOX - 4326. Sentinel-2 cloudless – http://s2maps.eu by EOX IT Seevices GmbH (Contains modified Copernicus Sentinel Data 2017) released under Creative Commons Arribution-Non Commercial-ShareALike 4.0 International License. For commercial usage please see https://cloudless.eox.at"
+        }, {
+            "group": "B",
+            "title": "2018 - Sentinel-2 (libre de nubes) 10m. Color Natural (432). EOX",
+            "tiled": true,
+            "tilematrixSet": "GoogleMapsCompatible",
+            "URL": "https://b.s2maps-tiles.eu/wmts",
+            "layer": "s2cloudless-2018_3857",
+            "Descr": "Sentinel-2 cloudless layer for 2018 by EOX - 4326. Sentinel-2 cloudless – http://s2maps.eu by EOX IT Seevices GmbH (Contains modified Copernicus Sentinel Data 2017 & 2018) released under Creative Commons Arribution-Non Commercial-ShareALike 4.0 International License. For commercial usage please see https://cloudless.eox.at"
+        }, {
+            "group": "B",
+            "title": "Mapa LiDAR PNOA",
+            "tiled": true,
+            "URL": "https://wmts-mapa-lidar.idee.es/lidar",
+            "layer": "EL.GridCoverageDSM",
+            "Descr": "Modelo Digital de Superficies LiDAR generado por composición de cuatro capas: sombreado, edificaciones, vegetación e hidrografía. A partir de las nubes de puntos LiDAR correspondientes a la primera cobertura del proyecto PNOA-LiDAR, debidamente clasificadas, se genera un modelo digital de superficies al que se le aplica un sombreado. Sobre este sombreado se superponen tres capas: dos modelos digitales de superficies normalizados, uno de la clase vegetación y otro de la clase edificación, y la rasterización de la capa de hidrografía de la Información Geográfica de Referencia del Sistema Cartográfico Nacional. Se aplica una paleta de color a cada capa, estableciendo un degradado en la información correspondiente a la vegetación y a la edificación en función de su altura sobre el terreno"
+        }, {
+            "group": "B",
+            "title": "Modelo Digital de Elevaciones, 2014-15",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_mde_andalucia",
+            "layers": "REDIAM",
+            "Descr": "Para escalas mayores a la 1:10.000, se visualiza el Modelo Digital de Elevaciones (MDE) de Andalucía de 2m de resolución generado a partir de información PNOA LiDAR 2014-15. Para escalas menores a la 1:10.000 hasta 1:400.000 el servicio muestra el Modelo Digital de Elevaciones de Andalucía de 10 m generado a partir de los vuelos realizados en 2010 (cuadrantes Sureste (SE) y Suroeste (SW)) y 2011 (cuadrantes Noreste (NE) y Noroeste (NW)) y a escalas menores a 1:400.000 se visualiza el Modelo Digital de Elevaciones de Andalucía de 100 m generado a partir de MDE por cuadrantes (resolución 10x10m y 5x5m) remuestreados procedentes de los proyectos de producción de Ortofotos regionales de Andalucía y del PNOA de 2006 y 2007"
+        }, {
+            "group": "B",
+            "title": "Mapa de Iluminaciones y sombras (2m), 2014-15",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_mapa_sombras_acimut_315",
+            "layers": "REDIAM",
+            "Descr": "Características del relieve de Andalucía a partir de la visualización, para escalas mayores a 1:200.000, del Mapa de Iluminaciones y Sombras de Andalucía de 2m de resolución generado a partir de la nube de puntos de los vuelos PNOA LiDAR 2014-15, utilizando como altitud solar y azimut solar 45º y 315º respectivamente. Para escalas menores a 1:200.000, el servicio muestra el Mapa de Iluminaciones y Sombras de Andalucía de 100m generado a partir de elevaciones del terreno de 10m y 5m remuestreadas, procedentes de los proyectos de producción de Ortofotos regionales de Andalucía y del PNOA de 2006 y 2007"
+        }, {
+            "group": "B",
+            "title": "Mapa de Pendientes (2m), 2014-15",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_mapa_pendientes",
+            "layers": "REDIAM",
+            "Descr": "Visualización, para escalas mayores a 1:15.000, del Mapa de Pendientes de Andalucía de 2m de resolución generado a partir del Modelo Digital del Terreno de malla 2x2m obtenido a partir de la nube de puntos de los vuelos PNOA LiDAR 2014-15. Para escalas comprendidas entre 1:15.000 y 1:400.000, el servicio muestra el Mapa de Pendientes de Andalucía de 10m de 2008-09 obtenido del MDT de 10x10m procedente de los proyectos de producción de Ortofotos PNOA. Para escalas menores, se representa el Mapa de Pendientes de Andalucía de 100m de resolución generado a partir de las elevaciones del terreno de 10m y 5m remuestreadas, procedentes de los proyectos de producción de Ortofotos Regionales de Andalucía y del PNOA de 2006 y 2007. Las pendientes se muestran clasificadas en porcentaje"
+        }, {
+            "group": "B",
+            "title": "Mapa de Orientaciones de Andalucía (10m), 2010-11",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_orientaciones_andalucia",
+            "layers": "REDIAM",
+            "Descr": "Mapa de Orientaciones de Andalucía de 10 m de resolución visible para escalas mayores a la 1:200.000, generado a partir del MDT de malla 10x10 m de 2010-11 de Andalucía. Para escalas menores a la 1:200.000 el servicio muestra el Mapa de Orientaciones de Andalucía de 100m generado a partir de elevaciones del terreno de 10 y 5 m remuestreadas, procedentes de los proyectos de producción de Ortofotos regionales de Andalucía y del PNOA de 2006 y 2007. Cada píxel del terreno queda clasificado según su orientación esté en solana o umbría"
+        }, {
+            "group": "B",
+            "title": "Modelo de Altura Normalizada MDHN (2m), 2014-15",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_modelo_digital_altura_normalizada",
+            "layers": "REDIAM",
+            "Descr": "Modelo Digital de Altura Normalizada (MDHN) de Andalucía de 2m de resolución generado a partir de información PNOA LiDAR 2014-15, cuya visualización se lleva a cabo a escalas mayores a 10.000, junto con 2 capas de -Edificios- y -Otros Efificios- del Mapa TOPORASTER10 del IECA (Instituto de Estadística y Cartografía de Andalucía). Para escalas menores se ha introducido una capa raster de referencia y una capa vectorial de -Manzanas- del DERA (Datos Espaciales de Referencia de Andalucía)"
+        }, {
+            "group": "B",
+            "title": "Modelo de ondulación de geoide EGM08-REDNAP",
+            "URL": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_modelo_geoide_egm08_rednap",
+            "layers": "REDIAM",
+            "Descr": "Modelo de geoide (ondulación del geoide) EGM08-REDNAP correspondiente a la Península y Baleares con resolución 1700 m"
+        }
+    ]
+}
